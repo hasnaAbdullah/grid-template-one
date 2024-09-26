@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 700px;
+        height: 500px;
+      }
+
+      .container div {
+        background-color: #fbb22f;
+      }
+      .container div.three,
+      div.five,
+      div.seven {
+        background-color: #ec3437;
+      }
+      .container div.one,
+      div.two,
+      div.six {
+        background-color: #6fbe4f;
+      }
+    </style>
+    <style>
+      .container {
+        background-color: #2b2e56;
+        margin: 20px auto;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+      }
+      .two {
+        grid-column: 2 / 4;
+      }
+      .one {
+        grid-row: 1 / -1;
+      }
+      .six {
+        grid-column: 4 / -1;
+        grid-row: 2 / -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+      <div class="four"></div>
+      <div class="five"></div>
+      <div class="six"></div>
+      <div class="seven"></div>
+      <div class="eight"></div>
+    </div>
+  </body>
+</html>
